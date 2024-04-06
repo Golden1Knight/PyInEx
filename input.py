@@ -1,4 +1,4 @@
-import ex
+import PyInEx as ex
 global smallInput
 global largeInput
 global bigInput
