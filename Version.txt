@@ -4,6 +4,9 @@
 0.4 BETA - Several amendments have been made
 0.5 BETA - Several amendments have been made
 0.5.1 BETA - Corrections regarding input.py file
+0.5.2 BETA:
+- Delete the Controlfile0.py
+- Major fixes and patches
 
 
 
