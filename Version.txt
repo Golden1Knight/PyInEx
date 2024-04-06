@@ -1,0 +1,2 @@
+0.1 BETA - Created a PyInEx library
+0.2 - add some patches
