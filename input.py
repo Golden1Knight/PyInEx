@@ -10,6 +10,7 @@ baseSettings = {
 global smallInput
 global largeInput
 global bigInput
+global biggestInput
 global alwaysInput
 alwaysInput = []
 def sI_on():
@@ -18,7 +19,8 @@ def lI_on():
   largeInput = [input(), input(), input(), input(), input(), input(), input()]
 def bI_on():
   bigInput = [input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input()]
-
+def bII_on():
+  biggestInput = [input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input()]
 def alwaysInputGo(repeatNumber, whether_to_display_notifications=False, settings=baseSettings):
   if whether_to_display_notifications is False:
     if settings.get("textTab") is False:
