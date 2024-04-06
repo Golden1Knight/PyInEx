@@ -7,6 +7,6 @@
 0.5.2 BETA:
 - Delete the Controlfile0.py
 - Major fixes and patches
-
+0.5.3 - Several amendments have been made
 
 
