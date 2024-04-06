@@ -1,2 +1,4 @@
 0.1 BETA - Created a PyInEx library
-0.2 - add some patches
+0.2 BETA - add some patches
+0.3 BETA (Folder Update) - updated file importing
+
