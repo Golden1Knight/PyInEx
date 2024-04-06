@@ -12,7 +12,7 @@ def bI_on():
   bigInput = [input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input()]
 
 def alwaysInputGo(repeatNumber, whether_to_display_notifications=False):
-  if repeatNumber == 00:
+  if repeatNumber == "#":
     if whether_to_display_notifications == False:
       while True:
         alwaysInput.append(input())
