@@ -17,7 +17,9 @@ def alwaysInputGo(repeatNumber, whether_to_display_notifications=False):
       while True:
         alwaysInput.append(input())
     else:
+      i = 0
       while True:
+        i = i + 1
         napis = input()
         alwaysInput.append(napis)
         print(f"Written {napis} for [{i}] times")
