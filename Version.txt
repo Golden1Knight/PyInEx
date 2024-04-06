@@ -2,5 +2,8 @@
 0.2 BETA - add some patches
 0.3 BETA (Folder Update) - updated file importing
 0.4 BETA - Several amendments have been made
+0.5 BETA - Several amendments have been made
+0.5.1 BETA - Corrections regarding input.py file
+
 
 
