@@ -1,4 +1,4 @@
-import input
+import PyInEx.input as input
 #activeExtension   Variable
 global activatedExtension
 activatedExtension = None
