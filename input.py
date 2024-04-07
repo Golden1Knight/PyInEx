@@ -3,7 +3,8 @@ global baseSettings
 baseSettings = {
   "textTab": False,
   "wheterToRepeat": False,
-  "seeLineNumber": False
+  "seeLineNumber": False,
+  "numberRepeatValue": None
 }
 global smallInput
 global largeInput
@@ -20,7 +21,7 @@ def bI_on():
 def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
   if settings.get("seeLineNumber") is False:
     if wheterToRepeat is False or settings.get("wheterToRepeat") is False:
-      if repeatNumber == "#":
+      if repeatNumber == "#" or settings.get("numberRepeatValue") == "#":
         if settings.get("textTab") is False:
           while True:
             alwaysInput.append(input())
@@ -35,7 +36,7 @@ def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
           for i in range(repeatNumber):
             alwaysInput.append(input("       "))
     else:
-      if not repeatNumber == "#":
+      if not repeatNumber == "#" or not settings.get("numberRepeatValue"):
         if settings.get("textTab") is False:
           for i in range(repeatNumber):
             napis = input()
@@ -66,7 +67,7 @@ def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
   else:
     #######################################################
         if wheterToRepeat is False or settings.get("wheterToRepeat") is False:
-          if repeatNumber == "#":
+          if repeatNumber == "#" or settings.get('numberRepeatValue') == "#":
             if settings.get("textTab") is False:
               print("YOU MUST SET FUNCTION 'textTab' TO TRUE")
               pass
@@ -84,7 +85,7 @@ def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
                 linia = linia + 1
                 alwaysInput.append(input(f"{linia}       "))
         else:
-          if not repeatNumber == "#":
+          if not repeatNumber == "#" or not settings.get("numberrepeatValue == "#":
             if settings.get("textTab") is False:
               print("YOU MUST SET FUNCTION 'textTab' TO TRUE")
             else:
