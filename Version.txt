@@ -8,6 +8,6 @@
 - Delete the Controlfile0.py
 - Major fixes and patches
 0.5.3 BETA - Several amendments have been made
-
+0.5.4 BETA - Code fixes and restoration of version (with fixes) 0.5.2 BETA
 
 
