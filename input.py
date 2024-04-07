@@ -77,8 +77,7 @@ def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
                 alwaysInput.append(input(f"{linia}       "))
           else:
             if settings.get("textTab") is False:
-              for i in range(repeatNumber):
-                alwaysInput.append(input())
+              print("YOU MUST SET FUNCTION 'textTab' TO TRUE")
             else:
               linia = 0
               for i in range(repeatNumber):
