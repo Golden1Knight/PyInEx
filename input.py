@@ -19,20 +19,51 @@ def lI_on():
 def bI_on():
   bigInput = [input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input(), input()]
 
-def alwaysInputGo(repeatNumber, whether_to_display_notifications=False, settings=baseSettings):
-  if whether_to_display_notifications is False:
-    if settings.get("textTab") is False:
-      
-
-      for i in range(repeatNumber):
-        alwaysInput.append(input())
+def alwaysInputGo(repeatNumber, wheterToRepeat=False, settings=baseSettings):
+  if wheterToRepeat is False:
+    if repeatNumber == "#":
+      if settings.get("textTab") is False:
+        while True:
+          alwaysInput.append(input())
+      else:
+        while True:
+          alwaysInput.append(input("       "))
     else:
-      for i in range(repeatNumber):
-        alwaysInput.append(input("       "))
+      if settings.get("textTab") is False:
+        for i in range(repeatNumber):
+          alwaysInput.append(input())
+      else:
+        for i in range(repeatNumber):
+          alwaysInput.append(input("       "))
   else:
-    for i in range(repeatNumber):
-      napis = input()
-      alwaysInput.append(napis)
-      print(f"Written {napis} for [{i}] times")
+    if not repeatNumber == "#":
+      if settings.get("textTab") is False:
+        for i in range(repeatNumber):
+          napis = input()
+          print(f"Written '{napis}' in input [{i+1}/{repeatNumber}]")
+      else:
+        for i in range(repeatNumber):
+          napis = input("       ")
+          napis = napis.replace("       ", "")
+          print(f"Written '{napis}' in input {i+1}/{repeatNumber}")
+    else:
+      if settings.get("textTab") is False:
+        i = 0
+        while True:
+          i = i + 1
+          napis = input()
+          print(f"Written '{napis}' in input [{i}/999999]")
+          if i == 999999:
+            pass
+      else:
+        i = 0
+        while True:
+          i = i + 1
+          napis = input("       ")
+          napis = napis.replace("       ", "")
+          print(f"Written '{napis}' in input [{i}/999999]")
+          if i == 999999:
+            pass
+        
 
   
